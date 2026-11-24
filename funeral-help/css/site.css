@@ -1,0 +1,20 @@
+/* Quiet Oak: forest night, sage and stone with Figtree and Cormorant on the Raíces engine */
+:root{
+  --f-sans:"Figtree",system-ui,sans-serif;
+  --f-serif:"Cormorant Garamond",Georgia,serif;
+  --f-mono:"Red Hat Mono",ui-monospace,monospace;
+  --night:#121a15;--soil:#1b251f;
+  --paper:#ece8dd;--cream:#f6f3ec;
+  --amber:#9cae86;--amber-d:#5f7550;
+  --mute:#8e978c;
+}
+em{font-weight:400;letter-spacing:-.01em}
+.hero-title em,.h-big em,.statement-text em,.give-title em,.band-quote em,.foot-tag em{color:var(--amber)}
+.statement-text em,.h-big em{color:var(--amber-d)}
+.hero .wp-block-cover__background{background:linear-gradient(90deg,rgba(18,26,21,.78) 0%,rgba(18,26,21,0) 62%),linear-gradient(180deg,rgba(18,26,21,.35) 0%,rgba(18,26,21,0) 30%,rgba(18,26,21,.15) 60%,rgba(18,26,21,.88) 100%)!important}
+.brand svg,.loader-mark{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.loader-mark{stroke:var(--amber)}
+.skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:16px;z-index:300;background:var(--cream);color:var(--night);padding:10px 14px}
+/* longer hero title than the template: scale it down so both lines fit */
+.hero-title{font-size:clamp(52px,8.2vw,150px)}
+@media (max-width:900px){.hero-title{font-size:clamp(40px,11.5vw,84px)}}
