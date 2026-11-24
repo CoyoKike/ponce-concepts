@@ -1,0 +1,23 @@
+/* Porchside Home Care: evening-blue palette and Nunito Sans / Source Serif 4 on the Raíces engine */
+:root{
+  --f-sans:"Nunito Sans",system-ui,sans-serif;
+  --f-serif:"Source Serif 4",Georgia,serif;
+  --f-mono:"Overpass Mono",ui-monospace,monospace;
+  --night:#13202e;--soil:#1c2c3d;
+  --paper:#f2ebe2;--cream:#faf6f0;
+  --amber:#e59a6b;--amber-d:#a85f33;
+  --mute:#93a0ae;
+}
+em{font-weight:400;letter-spacing:-.01em}
+.hero-title em,.h-big em,.statement-text em,.give-title em,.band-quote em,.foot-tag em{color:var(--amber)}
+.statement-text em,.h-big em{color:var(--amber-d)}
+.hero .wp-block-cover__background{background:linear-gradient(90deg,rgba(19,32,46,.78) 0%,rgba(19,32,46,0) 60%),linear-gradient(180deg,rgba(19,32,46,.35) 0%,rgba(19,32,46,0) 30%,rgba(19,32,46,.15) 60%,rgba(19,32,46,.85) 100%)!important}
+.brand svg,.loader-mark{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.loader-mark{stroke:var(--amber)}
+.skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:16px;z-index:300;background:var(--cream);color:var(--night);padding:10px 14px}
+/* larger, easier reading for older visitors */
+body{font-size:19px;line-height:1.6}
+.hero-lede{font-size:21px;max-width:500px}
+.btn{font-size:16px;font-weight:700}
+.hall-list p,.pillars p{font-size:19px}
+@media (max-width:760px){body{font-size:18px}.hero-lede{font-size:19px}}
