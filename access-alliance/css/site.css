@@ -1,0 +1,17 @@
+/* Open Gate Alliance: navy night, sunflower accent and Atkinson Hyperlegible type on the Raíces engine */
+:root{
+  --f-sans:"Atkinson Hyperlegible",system-ui,sans-serif;
+  --f-serif:"Libre Baskerville",Georgia,serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,monospace;
+  --night:#0d1430;--soil:#161f45;
+  --paper:#f4efe4;--cream:#fbf8f1;
+  --amber:#f2c230;--amber-d:#8f6a00;
+  --mute:#9aa0b8;
+}
+em{font-weight:400;letter-spacing:-.01em}
+.hero-title em,.h-big em,.statement-text em,.give-title em,.band-quote em,.foot-tag em{color:var(--amber)}
+.statement-text em,.h-big em{color:var(--amber-d)}
+.hero .wp-block-cover__background{background:linear-gradient(90deg,rgba(13,20,48,.78) 0%,rgba(13,20,48,0) 62%),linear-gradient(180deg,rgba(13,20,48,.4) 0%,rgba(13,20,48,0) 30%,rgba(13,20,48,.2) 60%,rgba(13,20,48,.88) 100%)!important}
+.brand svg,.loader-mark{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.loader-mark{stroke:var(--amber)}
+.skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:16px;z-index:300;background:var(--cream);color:var(--night);padding:10px 14px}
