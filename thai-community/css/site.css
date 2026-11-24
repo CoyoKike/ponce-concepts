@@ -1,0 +1,20 @@
+/* Baan Bua: indigo night, temple gold and lotus pink, Sarabun type on the Raíces engine */
+:root{
+  --f-sans:"Sarabun",system-ui,sans-serif;
+  --f-serif:"Cormorant Garamond",Georgia,serif;
+  --f-mono:"Noto Sans Mono",ui-monospace,monospace;
+  --night:#17112a;--soil:#231a3d;
+  --paper:#f3ece0;--cream:#faf6ee;
+  --amber:#d9a441;--amber-d:#9c6f1c;
+  --mute:#a59cb4;
+  --lotus:#e7a3b8;
+}
+em{font-weight:500;letter-spacing:-.01em}
+.hero-title em,.h-big em,.statement-text em,.give-title em,.band-quote em,.foot-tag em{color:var(--amber)}
+.statement-text em,.h-big em{color:var(--amber-d)}
+.band-quote .mono,.foot-tag .mono [lang="th"]{color:var(--lotus)}
+.hero .wp-block-cover__background{background:linear-gradient(90deg,rgba(23,17,42,.78) 0%,rgba(23,17,42,0) 60%),linear-gradient(180deg,rgba(23,17,42,.4) 0%,rgba(23,17,42,0) 30%,rgba(23,17,42,.15) 60%,rgba(23,17,42,.88) 100%)!important}
+.brand svg,.loader-mark{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.loader-mark{stroke:var(--amber)}
+.hall-list .st.lotus i{background:var(--lotus)}
+.skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:16px;z-index:300;background:var(--cream);color:var(--night);padding:10px 14px}
