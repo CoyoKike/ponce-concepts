@@ -1,0 +1,18 @@
+/* Agarita Women's Club: emerald night, antique gold and ivory, Manrope and Bodoni Moda type on the Raíces engine */
+:root{
+  --f-sans:"Manrope",system-ui,sans-serif;
+  --f-serif:"Bodoni Moda",Georgia,serif;
+  --f-mono:"Anonymous Pro",ui-monospace,monospace;
+  --night:#0f1f19;--soil:#172b23;
+  --paper:#f2ede2;--cream:#faf7f0;
+  --amber:#c9a24c;--amber-d:#8a6a22;
+  --mute:#8f9a90;
+}
+em{font-weight:400;letter-spacing:-.01em}
+.hero-title em,.h-big em,.statement-text em,.give-title em,.band-quote em,.foot-tag em{color:var(--amber)}
+.statement-text em,.h-big em{color:var(--amber-d)}
+.hero .wp-block-cover__background{background:linear-gradient(90deg,rgba(15,31,25,.7) 0%,rgba(15,31,25,0) 60%),linear-gradient(180deg,rgba(15,31,25,.35) 0%,rgba(15,31,25,0) 30%,rgba(15,31,25,.15) 60%,rgba(15,31,25,.85) 100%)!important}
+.brand svg,.loader-mark{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.loader-mark{stroke:var(--amber)}
+.skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:16px;z-index:300;background:var(--cream);color:var(--night);padding:10px 14px}
+@media (min-width:900px){.hero .wp-block-cover__image-background{width:140%!important}}
