@@ -50,9 +50,14 @@
     const rightX = () => { const r = $('#pathList').getBoundingClientRect(); return r.right - peek.offsetWidth * 0.55 - 24; };
     $('#pathList').addEventListener('mousemove', e => { px(rightX()); py(e.clientY); });
     $$('#pathList a').forEach(a => {
-      a.addEventListener('mouseenter', () => { pimg.src = a.dataset.img; gsap.to(peek, { autoAlpha: 1, scale: 1, rotate: gsap.utils.random(-4, 4), duration: .5, ease: 'expo.out' }); });
+      a.addEventListener('mouseenter', () => { if (performance.now() - (window.__lastScroll || 0) < 400) return; pimg.src = a.dataset.img; gsap.to(peek, { autoAlpha: 1, scale: 1, rotate: gsap.utils.random(-4, 4), duration: .5, ease: 'expo.out' }); });
       a.addEventListener('mouseleave', () => gsap.to(peek, { autoAlpha: 0, scale: .6, duration: .4, ease: 'power2.in' }));
     });
+    // never leave the photo stuck on screen: hide it when the list is left or the page scrolls
+    const hidePeek = () => { window.__lastScroll = performance.now(); if (parseFloat(getComputedStyle(peek).opacity) > 0) gsap.to(peek, { autoAlpha: 0, scale: .6, duration: .15, ease: 'power2.in', overwrite: true }); };
+    $('#pathList').addEventListener('mouseleave', hidePeek);
+    addEventListener('scroll', hidePeek, { passive: true });
+    addEventListener('wheel', hidePeek, { passive: true });
   }
 
   /* ---------- menu (phones) ---------- */
