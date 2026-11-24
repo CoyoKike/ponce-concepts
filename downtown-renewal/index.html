@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crossbeam Downtown · Shelter, jobs and housing in downtown Los Angeles</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="A community development nonprofit in downtown Los Angeles. Shelter, counseling, job training, job placement and housing placement for adults, free of charge.">
+<script>document.documentElement.classList.add('r-intro','r-js');setTimeout(function(){document.documentElement.classList.remove('r-intro')},7000)</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://images.pexels.com">
+<link rel="stylesheet" href="../shared/raices/css/base.css?v=2">
+<link rel="stylesheet" href="../shared/raices/css/site.css?v=1">
+<link rel="stylesheet" href="css/site.css?v=1">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader-inner">
+    <svg class="loader-mark" viewBox="0 0 120 60"><path d="M34 10h52"/><path d="M34 50h52"/><path d="M60 10v40"/><path d="M14 56h92"/></svg>
+    <span class="loader-bar"><i id="loaderBar"></i></span>
+    <span class="loader-num mono" id="loaderNum">000</span>
+  </div>
+</div>
+<div class="grain" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="Crossbeam Downtown, home">
+    <svg aria-hidden="true" viewBox="0 0 40 40"><path d="M10 8h20"/><path d="M10 29h20"/><path d="M20 8v21"/><path d="M5 35h30"/></svg>
+    <span>CROSSBEAM</span>
+  </a>
+  <nav class="nav-links" aria-label="Main">
+    <a href="#paths">Get help</a>
+    <a href="#programs">What we do</a>
+    <a href="#homes">Programs</a>
+    <a href="#news">Events</a>
+  </nav>
+  <span class="nav-lang mono">Free of charge</span>
+  <a class="btn btn-amber nav-give" href="#give"><span>Donate</span></a>
+  <button class="menu-btn" id="menuBtn" aria-controls="menu" aria-expanded="false"><span class="mono">Menu</span><i></i></button>
+</header>
+
+<div class="menu" id="menu" hidden>
+  <nav aria-label="Site menu">
+    <a href="#paths"><span class="mono">01</span>Get help</a>
+    <a href="#programs"><span class="mono">02</span>What we do</a>
+    <a href="#homes"><span class="mono">03</span>Programs</a>
+    <a href="#news"><span class="mono">04</span>Events</a>
+    <a href="#give"><span class="mono">05</span>Donate</a>
+  </nav>
+</div>
+
+<main id="main">
+
+<div class="wp-block-cover hero" id="top">
+  <span class="wp-block-cover__background" aria-hidden="true"></span>
+  <img class="wp-block-cover__image-background" alt="Broadway in downtown Los Angeles at dusk, with lit signs, traffic and people on the sidewalk" src="https://images.pexels.com/photos/20830209/pexels-photo-20830209.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=2400" style="object-position:60% 60%">
+  <div class="wp-block-cover__inner-container">
+    <div class="hero-copy">
+      <p class="eyebrow mono"><span>Downtown Los Angeles</span><span>Shelter · Jobs · Housing</span></p>
+      <h1 class="hero-title"><span class="line"><span>Start</span></span><span class="line"><span><em>from here.</em></span></span></h1>
+      <div class="hero-foot">
+        <p class="hero-lede">We help homeless and low-income adults in downtown Los Angeles get a bed, a job and a home of their own. Everything is free.</p>
+        <div class="hero-ctas"><a class="btn btn-light" href="#homes"><span>Find a program</span></a><a class="btn btn-ghost" href="#paths"><span>I need…</span></a></div>
+      </div>
+    </div>
+    <div class="scroll-cue mono" aria-hidden="true"><span>Scroll</span><i></i></div>
+  </div>
+</div>
+
+<section class="statement mission" id="about">
+  <div class="statement-inner">
+    <p class="label mono">01 / Our promise</p>
+    <p class="statement-text" id="statementText">Any adult who walks through our door gets a bed, a counselor and a plan, then help with the job and the keys that come next, <em>free of charge.</em></p>
+    <ol class="pillars">
+      <li><span class="mono">01</span><h3>A bed <em>tonight</em></h3></li>
+      <li><span class="mono">02</span><h3>A job <em>that pays</em></h3></li>
+      <li><span class="mono">03</span><h3>A home <em>of your own</em></h3></li>
+    </ol>
+    <div class="statement-figs">
+      <figure class="sfig sfig-a" data-speed="-0.16"><img alt="A young worker in a hard hat and safety vest sits on a stairway and looks at the camera" src="https://images.pexels.com/photos/8488019/pexels-photo-8488019.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1400"></figure>
+      <figure class="sfig sfig-b" data-speed="0.12"><img alt="A man smiles as he carries a plant and a box into an empty, sunlit apartment" src="https://images.pexels.com/photos/7464225/pexels-photo-7464225.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="paths" id="paths">
+  <div class="paths-head">
+    <p class="label mono">02 / Get help</p>
+    <h2 class="h-big">I <em>need…</em></h2>
+  </div>
+  <ul class="path-list" id="pathList">
+    <li><a href="#homes" data-img="https://images.pexels.com/photos/5490384/pexels-photo-5490384.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900"><img class="thumb" alt="" src="https://images.pexels.com/photos/5490384/pexels-photo-5490384.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900"><span class="mono">01</span><h3>A bed tonight</h3></a></li>
+    <li><a href="#programs" data-img="https://images.pexels.com/photos/375468/pexels-photo-375468.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900"><img class="thumb" alt="" src="https://images.pexels.com/photos/375468/pexels-photo-375468.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900"><span class="mono">02</span><h3>A job</h3></a></li>
+    <li><a href="#homes" data-img="https://images.pexels.com/photos/8292791/pexels-photo-8292791.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900"><img class="thumb" alt="" src="https://images.pexels.com/photos/8292791/pexels-photo-8292791.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900"><span class="mono">03</span><h3>A place of my own</h3></a></li>
+    <li><a href="#programs" data-img="https://images.pexels.com/photos/7579312/pexels-photo-7579312.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900"><img class="thumb" alt="" src="https://images.pexels.com/photos/7579312/pexels-photo-7579312.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900"><span class="mono">04</span><h3>Someone to talk to</h3></a></li>
+  </ul>
+  <div class="path-peek" id="pathPeek" aria-hidden="true"><img alt=""></div>
+</section>
+
+<section class="work" id="programs">
+  <div class="work-head">
+    <p class="label mono">03 / What we do</p>
+    <h2 class="h-big">From a bed <em>to the keys.</em></h2>
+  </div>
+  <div class="car" role="region" aria-roledescription="carousel" aria-label="What we do">
+    <div class="car-track" id="workTrack" tabindex="0">
+      <article class="card slide"><div class="card-media"><img alt="A single bed made up in a quiet, simple room" src="https://images.pexels.com/photos/9899861/pexels-photo-9899861.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200"><span class="tag mono"><i></i>Open nightly</span></div>
+        <div class="card-body"><span class="mono">01 · Housing · adults 18 and up</span><h3>Shelter Beds</h3><a class="more mono" href="#homes">See what's open →</a></div></article>
+      <article class="card slide"><div class="card-media"><img alt="A man in a cap rolls gray paint onto a bare concrete wall" src="https://images.pexels.com/photos/6474480/pexels-photo-6474480.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200"><span class="tag mono"><i></i>Paid while you learn</span></div>
+        <div class="card-body"><span class="mono">02 · Jobs · painting, plumbing, electrical</span><h3>Trades Crew</h3><a class="more mono" href="#homes">Join the crew →</a></div></article>
+      <article class="card slide"><div class="card-media"><img alt="Adults with laptops in a classroom, one of them smiling as he types" src="https://images.pexels.com/photos/34046709/pexels-photo-34046709.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200"><span class="tag mono"><i></i>New class monthly</span></div>
+        <div class="card-body"><span class="mono">03 · Jobs · four weeks</span><h3>Job Training</h3><a class="more mono" href="#news">See class dates →</a></div></article>
+      <article class="card slide"><div class="card-media"><img alt="Two men shake hands across a desk in a bright office" src="https://images.pexels.com/photos/5439381/pexels-photo-5439381.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200"><span class="tag mono"><i></i>Free</span></div>
+        <div class="card-body"><span class="mono">04 · Jobs · résumé to first day</span><h3>Job Placement</h3><a class="more mono" href="#homes">Start your search →</a></div></article>
+      <article class="card slide"><div class="card-media"><img alt="A hand places a set of keys into another person's open palm" src="https://images.pexels.com/photos/7642004/pexels-photo-7642004.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200"><span class="tag mono"><i></i>Case manager</span></div>
+        <div class="card-body"><span class="mono">05 · Housing · apply and move in</span><h3>Housing Placement</h3><a class="more mono" href="#homes">Find a place →</a></div></article>
+      <article class="card slide"><div class="card-media"><img alt="A man talks with a counselor in a bright office" src="https://images.pexels.com/photos/9064708/pexels-photo-9064708.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200"><span class="tag mono"><i></i>Walk in</span></div>
+        <div class="card-body"><span class="mono">06 · Support · one on one</span><h3>Counseling</h3><a class="more mono" href="#paths">Talk to someone →</a></div></article>
+    </div>
+    <div class="car-ui">
+      <div class="car-bar" aria-hidden="true"><i id="carBar"></i></div>
+      <span class="car-count mono" aria-live="polite"><b id="carNow">01</b> / 06</span>
+      <button class="car-btn" id="carPrev" aria-label="Previous"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <button class="car-btn" id="carNext" aria-label="Next"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 5l7 7-7 7"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<div class="wp-block-cover band">
+  <span class="wp-block-cover__background" aria-hidden="true"></span>
+  <img class="wp-block-cover__image-background" alt="The downtown Los Angeles skyline in silhouette as the sun sets" src="https://images.pexels.com/photos/28451047/pexels-photo-28451047.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=2400" style="object-position:50% 50%">
+  <div class="wp-block-cover__inner-container">
+    <blockquote class="band-quote">
+      <p>“No one has to start over alone. <em>We start with you, right here.”</em></p>
+      <p class="mono">Crossbeam Downtown · Our promise</p>
+    </blockquote>
+  </div>
+</div>
+
+<section class="hall" id="homes">
+  <div class="hall-grid">
+    <div class="hall-intro">
+      <p class="label mono">04 / Programs</p>
+      <h2 class="h-big">Find what <em>you need.</em></h2>
+      <figure class="hall-fig"><img alt="A smiling warehouse worker in a safety vest holds a box in front of stacked cartons" src="https://images.pexels.com/photos/8069548/pexels-photo-8069548.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1400"></figure>
+    </div>
+    <div class="hall-list-wrap">
+      <div class="hall-bar">
+        <label class="sr" for="hofQ">Search</label>
+        <input id="hofQ" type="search" placeholder="Search by program or need" autocomplete="off">
+        <div class="sectors" id="hofS" role="group" aria-label="Filter by type"></div>
+      </div>
+      <p class="hall-count mono" id="hofCount" aria-live="polite"></p>
+      <ol class="hall-list" id="hofList"></ol>
+    </div>
+  </div>
+</section>
+
+<section class="news" id="news">
+  <div class="news-head">
+    <p class="label mono">05 / Events</p>
+    <h2 class="h-big">Come <em>through the door.</em></h2>
+  </div>
+  <ul class="news-list">
+    <li><a href="#news"><span class="mono">Every weekday · 8 AM · Front desk</span><h3>Walk-in intake, no appointment</h3><span class="arrow" aria-hidden="true">→</span></a></li>
+    <li><a href="#news"><span class="mono">First Monday · Classroom</span><h3>A new job training class begins</h3><span class="arrow" aria-hidden="true">→</span></a></li>
+    <li><a href="#news"><span class="mono">Every Thursday · Open to all</span><h3>Hiring day with local employers</h3><span class="arrow" aria-hidden="true">→</span></a></li>
+  </ul>
+</section>
+
+<section class="give" id="give">
+  <div class="give-bg"><img alt="" src="https://images.pexels.com/photos/35291210/pexels-photo-35291210.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=2400"></div>
+  <div class="give-inner">
+    <p class="label mono">06 / Donate</p>
+    <h2 class="give-title">Build the <em>next step.</em></h2>
+    <div class="give-grid">
+      <form class="give-form" id="giveForm">
+        <div class="amounts" role="radiogroup" aria-label="Gift amount">
+          <button type="button" role="radio" aria-checked="false">$25</button>
+          <button type="button" role="radio" aria-checked="true">$50</button>
+          <button type="button" role="radio" aria-checked="false">$100</button>
+          <button type="button" role="radio" aria-checked="false">$250</button>
+        </div>
+        <div class="freq" role="radiogroup" aria-label="Frequency"><button type="button" role="radio" aria-checked="false">Once</button><button type="button" role="radio" aria-checked="true">Monthly</button></div>
+        <button class="btn btn-amber btn-xl" id="giveBtn" type="submit"><span>Give $50 monthly</span></button>
+        <p class="form-note mono">Preview only. Nothing is charged.</p>
+      </form>
+      <ul class="give-more">
+        <li><a href="#programs"><span class="mono">Paid training</span><b>Fund the trades crew</b></a></li>
+        <li><a href="#paths"><span class="mono">Time, not money</span><b>Volunteer or hire</b></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot-big" aria-hidden="true">CROSSBEAM</div>
+  <div class="foot-tag"><p>Start <em>from here.</em></p><p class="mono">Shelter · Jobs · Housing · Downtown Los Angeles · Free of charge</p></div>
+  <div class="foot-cols">
+    <ul><li><a href="#paths">Get help</a></li><li><a href="#homes">Programs</a></li><li><a href="#news">Events</a></li></ul>
+    <ul><li>Los Angeles, California</li><li>Serving downtown LA</li><li><a href="tel:+12135550148">213-555-0148</a></li></ul>
+    <ul><li><a href="#give">Donate</a></li><li><a href="#paths">Volunteer</a></li><li><a href="#top">Accessibility</a></li></ul>
+  </div>
+  <div class="foot-row mono"><span>© 2026 Crossbeam Downtown · Design concept by Ponce Consulting</span><a href="#top">Back to top ↑</a></div>
+  <p class="credits mono">Photos: Pexels</p>
+</footer>
+
+<script>
+window.HALL_NOUN = 'programs';
+window.HALL_FILTERS = ['All', 'Housing', 'Jobs', 'Support'];
+window.HALL_CLS = function (st) { return ''; };
+window.HALL_DATA = [
+  ['Open', 'Shelter beds', 'Housing', 'Adults 18 and up · check in at the front desk by 7 PM'],
+  ['Waitlist', 'Rooms in a residence hotel', 'Housing', 'Single rooms for adults with very low income'],
+  ['Full', 'Family apartments', 'Housing', 'Apartments for adults living with children or family'],
+  ['Open', 'Housing placement', 'Housing', 'A case manager helps you find, apply for and move into a place'],
+  ['Open', 'Four-week job training', 'Jobs', 'Classroom and hands-on skills · a new class starts each month'],
+  ['Waitlist', 'Trades crew', 'Jobs', 'Paid work in painting, plumbing and electrical repair while you learn'],
+  ['Open', 'Job search help', 'Jobs', 'Résumés, applications, interview practice and bus passes'],
+  ['Open', 'Counseling', 'Support', 'One-on-one sessions with a counselor · walk in or book a time'],
+  ['Open', 'Meals for shelter guests', 'Support', 'Breakfast and dinner every day'],
+];
+</script>
+<script src="../shared/js/gsap.min.js"></script>
+<script src="../shared/js/ScrollTrigger.min.js"></script>
+<script src="../shared/js/lenis.min.js"></script>
+<script src="../shared/raices/js/site.js?v=6"></script>
+</body>
+</html>
