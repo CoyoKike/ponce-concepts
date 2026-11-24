@@ -1,0 +1,17 @@
+/* Riverbend House: brick and ink-navy palette, Work Sans / DM Serif Display / Courier Prime on the Raíces engine */
+:root{
+  --f-sans:"Work Sans",system-ui,sans-serif;
+  --f-serif:"DM Serif Display",Georgia,serif;
+  --f-mono:"Courier Prime",ui-monospace,monospace;
+  --night:#141826;--soil:#1e2335;
+  --paper:#efe6d8;--cream:#f8f2e8;
+  --amber:#c8553d;--amber-d:#8f3523;
+  --mute:#9a9389;
+}
+em{font-weight:400;letter-spacing:-.01em}
+.hero-title em,.h-big em,.statement-text em,.give-title em,.band-quote em,.foot-tag em{color:var(--amber)}
+.statement-text em,.h-big em{color:var(--amber-d)}
+.hero .wp-block-cover__background{background:linear-gradient(90deg,rgba(20,24,38,.7) 0%,rgba(20,24,38,0) 60%),linear-gradient(180deg,rgba(20,24,38,.35) 0%,rgba(20,24,38,0) 30%,rgba(20,24,38,.15) 60%,rgba(20,24,38,.85) 100%)!important}
+.brand svg,.loader-mark{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.loader-mark{stroke:var(--amber)}
+.skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:16px;z-index:300;background:var(--cream);color:var(--night);padding:10px 14px}
