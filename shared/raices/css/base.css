@@ -1,0 +1,8 @@
+/* Base rules the Raíces engine expects (WordPress core cover block) + font variables. Sites override the variables. */
+:root{--f-sans:"Bricolage",system-ui,sans-serif;--f-serif:"Newsreader",Georgia,serif;--f-mono:"JetBrains Mono",ui-monospace,monospace}
+.wp-block-cover{position:relative;overflow:hidden;box-sizing:border-box}
+.wp-block-cover__background{position:absolute;inset:0;z-index:1;pointer-events:none}
+.wp-block-cover__image-background{position:absolute;inset:0;width:100%;height:100%;max-width:none;margin:0;padding:0;border:0;object-fit:cover;z-index:0}
+.wp-block-cover__inner-container{position:relative;z-index:2}
+img{max-width:100%}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}

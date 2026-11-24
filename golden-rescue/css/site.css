@@ -1,0 +1,17 @@
+/* Sundown Golden Rescue: sunset palette and Instrument type on the Raíces engine */
+:root{
+  --f-sans:"Instrument Sans",system-ui,sans-serif;
+  --f-serif:"Instrument Serif",Georgia,serif;
+  --f-mono:"DM Mono",ui-monospace,monospace;
+  --night:#15110b;--soil:#221a10;
+  --paper:#f3e6cd;--cream:#fbf5ea;
+  --amber:#f0a03c;--amber-d:#c46d1c;
+  --mute:#a3937d;
+}
+em{font-weight:400;letter-spacing:-.01em}
+.hero-title em,.h-big em,.statement-text em,.give-title em,.band-quote em,.foot-tag em{color:var(--amber)}
+.statement-text em,.h-big em{color:var(--amber-d)}
+.hero .wp-block-cover__background{background:linear-gradient(90deg,rgba(21,17,11,.7) 0%,rgba(21,17,11,0) 60%),linear-gradient(180deg,rgba(21,17,11,.35) 0%,rgba(21,17,11,0) 30%,rgba(21,17,11,.15) 60%,rgba(21,17,11,.85) 100%)!important}
+.brand svg,.loader-mark{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
+.loader-mark{stroke:var(--amber)}
+.skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:16px;z-index:300;background:var(--cream);color:var(--night);padding:10px 14px}
