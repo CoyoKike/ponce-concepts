@@ -46,7 +46,9 @@
   const peek = $('#pathPeek'), pimg = $('img', peek);
   if (matchMedia('(hover: hover)').matches && window.gsap) {
     const px = gsap.quickTo(peek, 'x', { duration: .6, ease: 'power3' }), py = gsap.quickTo(peek, 'y', { duration: .6, ease: 'power3' });
-    $('#pathList').addEventListener('mousemove', e => { px(e.clientX); py(e.clientY); });
+    // photo stays on the right side of the list and only follows the cursor up and down, so it never covers the words
+    const rightX = () => { const r = $('#pathList').getBoundingClientRect(); return r.right - peek.offsetWidth * 0.55 - 24; };
+    $('#pathList').addEventListener('mousemove', e => { px(rightX()); py(e.clientY); });
     $$('#pathList a').forEach(a => {
       a.addEventListener('mouseenter', () => { pimg.src = a.dataset.img; gsap.to(peek, { autoAlpha: 1, scale: 1, rotate: gsap.utils.random(-4, 4), duration: .5, ease: 'expo.out' }); });
       a.addEventListener('mouseleave', () => gsap.to(peek, { autoAlpha: 0, scale: .6, duration: .4, ease: 'power2.in' }));
