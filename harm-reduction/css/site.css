@@ -1,0 +1,17 @@
+/* Open Porch Health: teal night and coral palette with Familjen Grotesk type on the Raíces engine */
+:root{
+  --f-sans:"Familjen Grotesk",system-ui,sans-serif;
+  --f-serif:"Lora",Georgia,serif;
+  --f-mono:"Azeret Mono",ui-monospace,monospace;
+  --night:#0f1f22;--soil:#17292c;
+  --paper:#efe9e1;--cream:#f8f4ee;
+  --amber:#ef6f56;--amber-d:#b84a35;
+  --mute:#93a19f;
+}
+em{font-weight:400;letter-spacing:-.01em}
+.hero-title em,.h-big em,.statement-text em,.give-title em,.band-quote em,.foot-tag em{color:var(--amber)}
+.statement-text em,.h-big em{color:var(--amber-d)}
+.hero .wp-block-cover__background{background:linear-gradient(90deg,rgba(15,31,34,.72) 0%,rgba(15,31,34,0) 60%),linear-gradient(180deg,rgba(15,31,34,.35) 0%,rgba(15,31,34,0) 30%,rgba(15,31,34,.15) 60%,rgba(15,31,34,.85) 100%)!important}
+.brand svg,.loader-mark{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.loader-mark{stroke:var(--amber)}
+.skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:16px;z-index:300;background:var(--cream);color:var(--night);padding:10px 14px}
