@@ -197,7 +197,11 @@
 
   /* ---------- footer word ---------- */
   const fb = $('.foot-big');
-  fb.innerHTML = [...fb.textContent].map(c => `<span style="display:inline-block">${c}</span>`).join('');
+  fb.innerHTML = [...fb.textContent].map(c => `<span style="display:inline-block">${c === ' ' ? '&nbsp;' : c}</span>`).join('');
+  // long names: shrink the footer word until it fits the page width
+  const fitFoot = () => { fb.style.fontSize = ''; const w = fb.scrollWidth, avail = fb.clientWidth;
+    if (w > avail) fb.style.fontSize = (parseFloat(getComputedStyle(fb).fontSize) * avail / w * 0.97) + 'px'; };
+  fitFoot(); addEventListener('resize', fitFoot); document.fonts && document.fonts.ready.then(fitFoot);
   gsap.from('.foot-big span', { yPercent: 100, stagger: .05, ease: 'none', scrollTrigger: { trigger: '.foot', start: 'top bottom', end: 'bottom bottom', scrub: true } });
 
   /* ---------- progress ---------- */
