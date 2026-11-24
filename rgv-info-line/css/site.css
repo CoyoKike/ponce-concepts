@@ -1,0 +1,17 @@
+/* Puente Council: terracotta and deep teal on sand, Schibsted Grotesk and Fraunces on the Raíces engine */
+:root{
+  --f-sans:"Schibsted Grotesk",system-ui,sans-serif;
+  --f-serif:"Fraunces",Georgia,serif;
+  --f-mono:"Space Mono",ui-monospace,monospace;
+  --night:#10201f;--soil:#173230;
+  --paper:#f1e3cf;--cream:#f9f1e4;
+  --amber:#d9653b;--amber-d:#a8481f;
+  --mute:#93a09a;
+}
+em{font-weight:400;letter-spacing:-.01em}
+.hero-title em,.h-big em,.statement-text em,.give-title em,.band-quote em,.foot-tag em{color:var(--amber)}
+.statement-text em,.h-big em{color:var(--amber-d)}
+.hero .wp-block-cover__background{background:linear-gradient(90deg,rgba(16,32,31,.72) 0%,rgba(16,32,31,0) 60%),linear-gradient(180deg,rgba(16,32,31,.35) 0%,rgba(16,32,31,0) 30%,rgba(16,32,31,.15) 60%,rgba(16,32,31,.85) 100%)!important}
+.brand svg,.loader-mark{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
+.loader-mark{stroke:var(--amber)}
+.skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:16px;z-index:300;background:var(--cream);color:var(--night);padding:10px 14px}
