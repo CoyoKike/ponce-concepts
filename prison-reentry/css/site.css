@@ -1,0 +1,17 @@
+/* Caprock Homeward Ministry: slate night, wheat gold and linen on the Raíces engine */
+:root{
+  --f-sans:"Red Hat Display",system-ui,sans-serif;
+  --f-serif:"Libre Baskerville",Georgia,serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,monospace;
+  --night:#141a21;--soil:#1e2731;
+  --paper:#ede6d8;--cream:#f8f4ec;
+  --amber:#e1b35c;--amber-d:#a8782a;
+  --mute:#8e96a0;
+}
+em{font-weight:400;letter-spacing:-.02em}
+.hero-title em,.h-big em,.statement-text em,.give-title em,.band-quote em,.foot-tag em{color:var(--amber)}
+.statement-text em,.h-big em{color:var(--amber-d)}
+.hero .wp-block-cover__background{background:linear-gradient(90deg,rgba(20,26,33,.74) 0%,rgba(20,26,33,0) 60%),linear-gradient(180deg,rgba(20,26,33,.35) 0%,rgba(20,26,33,0) 30%,rgba(20,26,33,.15) 60%,rgba(20,26,33,.85) 100%)!important}
+.brand svg,.loader-mark{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.loader-mark{stroke:var(--amber)}
+.skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:16px;z-index:300;background:var(--cream);color:var(--night);padding:10px 14px}

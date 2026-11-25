@@ -1,0 +1,19 @@
+/* Orchard Path Family Center: soft teal night, apricot and cream, Manrope / Lora on the Raíces engine */
+:root{
+  --f-sans:"Manrope",system-ui,sans-serif;
+  --f-serif:"Lora",Georgia,serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,monospace;
+  --night:#0f2226;--soil:#17333a;
+  --paper:#f2eadb;--cream:#fbf6ee;
+  --amber:#f4a873;--amber-d:#c46f3d;
+  --mute:#93a8a6;
+}
+em{font-weight:400;letter-spacing:-.01em}
+.hero-title em,.h-big em,.statement-text em,.give-title em,.band-quote em,.foot-tag em{color:var(--amber)}
+.statement-text em,.h-big em{color:var(--amber-d)}
+.hero .wp-block-cover__background{background:linear-gradient(90deg,rgba(15,34,38,.74) 0%,rgba(15,34,38,0) 60%),linear-gradient(180deg,rgba(15,34,38,.35) 0%,rgba(15,34,38,0) 30%,rgba(15,34,38,.15) 60%,rgba(15,34,38,.85) 100%)!important}
+.brand svg,.loader-mark{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
+.loader-mark{stroke:var(--amber)}
+.skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:16px;z-index:300;background:var(--cream);color:var(--night);padding:10px 14px}
+/* hero photo: widen on desktop so the two faces sit right of the title */
+@media (min-width:901px){.hero .wp-block-cover__image-background{width:130%!important}}

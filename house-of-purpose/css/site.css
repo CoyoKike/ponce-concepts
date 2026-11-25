@@ -1,0 +1,18 @@
+/* Eastlight House: plum night, marigold and cream with Figtree / Newsreader / Martian Mono on the Raíces engine */
+:root{
+  --f-sans:"Figtree",system-ui,sans-serif;
+  --f-serif:"Newsreader",Georgia,serif;
+  --f-mono:"Martian Mono",ui-monospace,monospace;
+  --night:#1c1024;--soil:#2a1834;
+  --paper:#f4ead8;--cream:#fbf6ec;
+  --amber:#f2a93b;--amber-d:#b96f0e;
+  --mute:#a3939f;
+}
+em{font-weight:400;letter-spacing:-.01em}
+.hero-title em,.h-big em,.statement-text em,.give-title em,.band-quote em,.foot-tag em{color:var(--amber)}
+.statement-text em,.h-big em{color:var(--amber-d)}
+.hero .wp-block-cover__background{background:linear-gradient(90deg,rgba(28,16,36,.74) 0%,rgba(28,16,36,0) 58%),linear-gradient(180deg,rgba(28,16,36,.35) 0%,rgba(28,16,36,0) 30%,rgba(28,16,36,.15) 60%,rgba(28,16,36,.88) 100%)!important}
+.brand svg,.loader-mark{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.loader-mark{stroke:var(--amber)}
+.skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:16px;z-index:300;background:var(--cream);color:var(--night);padding:10px 14px}
+.mono{font-size:11px;letter-spacing:.03em}

@@ -1,0 +1,17 @@
+/* Common Bowl: navy night, saffron and sand on the Raíces engine */
+:root{
+  --f-sans:"Sora",system-ui,sans-serif;
+  --f-serif:"Crimson Pro",Georgia,serif;
+  --f-mono:"Roboto Mono",ui-monospace,monospace;
+  --night:#0e1a2d;--soil:#172740;
+  --paper:#eee2c8;--cream:#f8f1e3;
+  --amber:#f2a516;--amber-d:#bf7a06;
+  --mute:#97a0ae;
+}
+em{font-weight:400;letter-spacing:-.01em}
+.hero-title em,.h-big em,.statement-text em,.give-title em,.band-quote em,.foot-tag em{color:var(--amber)}
+.statement-text em,.h-big em{color:var(--amber-d)}
+.hero .wp-block-cover__background{background:linear-gradient(90deg,rgba(14,26,45,.78) 0%,rgba(14,26,45,.25) 45%,rgba(14,26,45,0) 65%),linear-gradient(180deg,rgba(14,26,45,.4) 0%,rgba(14,26,45,0) 30%,rgba(14,26,45,.15) 60%,rgba(14,26,45,.88) 100%)!important}
+.brand svg,.loader-mark{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.loader-mark{stroke:var(--amber)}
+.skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:16px;z-index:300;background:var(--cream);color:var(--night);padding:10px 14px}

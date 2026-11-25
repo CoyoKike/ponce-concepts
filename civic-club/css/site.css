@@ -1,0 +1,17 @@
+/* Brickyard Oaks Civic Club: live-oak green, brick red and cream paper, Public Sans and Libre Caslon on the Raíces engine */
+:root{
+  --f-sans:"Public Sans",system-ui,sans-serif;
+  --f-serif:"Libre Caslon Text",Georgia,serif;
+  --f-mono:"JetBrains Mono",ui-monospace,monospace;
+  --night:#0f1a14;--soil:#18271e;
+  --paper:#f1e8d6;--cream:#faf5ea;
+  --amber:#d9694a;--amber-d:#a83c27;
+  --mute:#98a293;
+}
+em{font-weight:400;letter-spacing:-.01em}
+.hero-title em,.h-big em,.statement-text em,.give-title em,.band-quote em,.foot-tag em{color:var(--amber)}
+.statement-text em,.h-big em{color:var(--amber-d)}
+.hero .wp-block-cover__background{background:linear-gradient(90deg,rgba(15,26,20,.72) 0%,rgba(15,26,20,0) 60%),linear-gradient(180deg,rgba(15,26,20,.35) 0%,rgba(15,26,20,0) 30%,rgba(15,26,20,.15) 60%,rgba(15,26,20,.85) 100%)!important}
+.brand svg,.loader-mark{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.loader-mark{stroke:var(--amber)}
+.skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:16px;z-index:300;background:var(--cream);color:var(--night);padding:10px 14px}

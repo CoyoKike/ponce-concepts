@@ -1,0 +1,17 @@
+/* Jornada Institute: night blue, marigold and warm paper; Archivo, Fraunces and Space Mono on the Raíces engine */
+:root{
+  --f-sans:"Archivo",system-ui,sans-serif;
+  --f-serif:"Fraunces",Georgia,serif;
+  --f-mono:"Space Mono",ui-monospace,monospace;
+  --night:#0e1a2f;--soil:#15243e;
+  --paper:#f1e9d8;--cream:#faf6ec;
+  --amber:#f3a91c;--amber-d:#b46a00;
+  --mute:#8e98aa;
+}
+em{font-weight:400;letter-spacing:-.01em}
+.hero-title em,.h-big em,.statement-text em,.give-title em,.band-quote em,.foot-tag em{color:var(--amber)}
+.statement-text em,.h-big em{color:var(--amber-d)}
+.hero .wp-block-cover__background{background:linear-gradient(90deg,rgba(14,26,47,.78) 0%,rgba(14,26,47,.25) 45%,rgba(14,26,47,0) 62%),linear-gradient(180deg,rgba(14,26,47,.4) 0%,rgba(14,26,47,0) 30%,rgba(14,26,47,.15) 60%,rgba(14,26,47,.88) 100%)!important}
+.brand svg,.loader-mark{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.loader-mark{stroke:var(--amber)}
+.skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:16px;z-index:300;background:var(--cream);color:var(--night);padding:10px 14px}
